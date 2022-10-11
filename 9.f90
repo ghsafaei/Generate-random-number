@@ -53,7 +53,7 @@ Program my_planetcircular
 	  
 	 vc=sqrt(G*M_star/r0)
 	!print*,G,M_star,r0,vc
-	theta=2.*pi*RANF()
+	theta=2.*pi*RANDOM(Seed)
 	phi=pi*RAN0(idum)
 	 vx0=vc*sin(theta)*cos(phi)
 	 vy0=vc*sin(theta)*sin(phi)
