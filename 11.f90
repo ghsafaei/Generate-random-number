@@ -79,10 +79,11 @@ Program my_planetcircular
 	!vpx0=v_p*sin(theta)*cos(phi)
 	!vpy0=v_p*sin(theta)*sin(phi)
 	!vpz0=v_p*cos(theta)
-	!r
-	!x
-	!y
-	!z
+	!theta=pi*RANDOM(Seed)
+	!r=a*(1.-ecc**2.)/(1.+ecc*cos(theta))
+	!x=a*cosh(r)*cos(theta)
+	!y=a*sinh(r)*sin(theta)
+	!z=z
 	
 	 M_J=317.8*M_Earth
 	 mp_max=8.*M_J
