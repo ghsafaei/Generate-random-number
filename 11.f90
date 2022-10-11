@@ -7,7 +7,7 @@ Program my_planetcircular
  INTEGER i,ISEED,idum,seed
  INTEGER :: time,STIME
  INTEGER, DIMENSION (9) :: T
- REAL :: RANF
+ REAL :: RANF,ecc,rp,ra,a,v_p,vpx0,vpy0,vpz0
 	!
 	! Initial seed from the system time and forced to be odd
 	!
@@ -42,7 +42,7 @@ Program my_planetcircular
 	 AU=1.4959787066e11
 	 pc=206264.806*AU
 	 
-     !Semi-major axis
+     !a: Semi-major axis  (0.3 AU <a< 31 AU)
 	 !r0= distance between star and planet at the start point of motion
 	 a_min=0.3
 	 a_max=31.
@@ -66,12 +66,31 @@ Program my_planetcircular
 	 vz0=vc*cos(theta)
 	!v0= sqrt(vx0**2+vy0**2+vz0**2)
 	
+	!eccentricity ecc:    0=<ecc<=1
+	!ecc=RANDOM(Seed)
+	!rp: peri center according to AU
+	!a=r_p/(1.-ecc)
+	!r_p=a*(1.-ecc)
+	!a: Semi-major axis
+	!a=r0
+	!v_p=sqrt((G*M_star/a)*((1.+ecc)/(1.-ecc)))
+	!theta=2.*pi*RANDOM(Seed)
+	!phi=pi*RANDOM(Seed)
+	!vpx0=v_p*sin(theta)*cos(phi)
+	!vpy0=v_p*sin(theta)*sin(phi)
+	!vpz0=v_p*cos(theta)
+	!r
+	!x
+	!y
+	!z
+	
 	 M_J=317.8*M_Earth
 	 mp_max=8.*M_J
 	 mp_min=0.0001*M_J
 	 m_p=(mp_max-mp_min)*RANDOM(Seed)+mp_min
 	 !m_p=M_Earth
 	write(1,*)m_p,x0,y0,z0,vx0,vy0,vz0
+	!write(1,*)m_p,x0,y0,z0,vpx0,vpy0,vpz0
 	!write(1,*)'m_p=',m_p,'   ','x0=',x0,'   ','y0=',y0,'   ','z0=',z0,'   ','vx0=',vx0,'   ','vy0=',vy0,'   ','vz0=',vz0,'   ','vc=',vc,'   ','r0=',sqrt(x0**2+y0**2+z0**2),'   ','v0=',sqrt(vx0**2+vy0**2+vz0**2)
   !print*,ran3(idum),'end'
   !RANF()	
