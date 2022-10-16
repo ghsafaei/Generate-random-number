@@ -10,5 +10,6 @@ Program my_reader
   print*,m0s(i),x0s(i),y0s(i),z0s(i),vx0s(i),vy0s(i),vz0s(i)
   write(2,*)m0s(i),x0s(i),y0s(i),z0s(i),vx0s(i),vy0s(i),vz0s(i)
  end do
-
+ close(1)
+ close(2)
 End program
