@@ -1,0 +1,119 @@
+
+-----START----         
+
+
+Using OpenMP with 8 threads
+
+
+Random seed = 1191
+
+
+
+
+-----GENERATE MASSES-----     
+
+Setting stellar masses to 1.0 solar mass
+
+M = 10
+
+
+-----GENERATE POSITIONS & VELOCITIES-----   
+
+Approximate tidal radius: 3.22609 (pc)
+
+Generating Plummer model with parameters: N = 10	 Rh = 1.000	 D = 3.00
+Setting cut-off radius of Plummer sphere to approximate tidal radius
+
+Generating Orbits:
+Generating orbit #0
+
+Applying centre-of-mass correction.
+
+Re-scaling of orbits (dt ~ N^2!)
+Dynamical temperature of centre-of-mass particles kT = 1.000000
+
+
+Estimating appropriate NNBMAX = 5 and RS0 = 1.305879 [pc]
+
+measuring half-mass radius: 1.0000000 	 0.8657454 (should/is)
+and correcting for this factor
+
+rvir = 2.38093	 rh = 1.00000	 rplummer = 0.76628	 rtide = 3.22609 (pc)
+
+Radial density profile:
+
+#  R [pc]   N [1/pc^3]   M [Msun/pc^3]   L [Lsun/pc^3]   N [1/pc^2]   M [Msun/pc^2]   L [Lsun/pc^2] 
+   0.1000       0.0000          0.0000          0.0000       0.0000          0.0000          0.0000
+   0.1214       0.0000          0.0000          0.0000       0.0000          0.0000          0.0000
+   0.1475       0.0000          0.0000          0.0000      45.4854         45.4854          0.0000
+   0.1791       0.0000          0.0000          0.0000       0.0000          0.0000          0.0000
+   0.2174       0.0000          0.0000          0.0000       0.0000          0.0000          0.0000
+   0.2640       0.0000          0.0000          0.0000       0.0000          0.0000          0.0000
+   0.3206       0.0000          0.0000          0.0000       0.0000          0.0000          0.0000
+   0.3893       0.0000          0.0000          0.0000       6.5242          6.5242          0.0000
+   0.4728       5.1160          5.1160          0.0000       0.0000          0.0000          0.0000
+   0.5741       0.0000          0.0000          0.0000       6.0010          6.0010          0.0000
+   0.6972       1.5956          1.5956          0.0000       2.0348          2.0348          0.0000
+   0.8466       0.0000          0.0000          0.0000       0.0000          0.0000          0.0000
+   1.0280       1.4929          1.4929          0.0000       0.9358          0.9358          0.0000
+   1.2484       0.0000          0.0000          0.0000       0.6346          0.6346          0.0000
+   1.5159       0.1552          0.1552          0.0000       0.0000          0.0000          0.0000
+   1.8408       0.0000          0.0000          0.0000       0.0000          0.0000          0.0000
+   2.2354       0.0968          0.0968          0.0000       0.5938          0.5938          0.0000
+   2.7144       0.0270          0.0270          0.0000       0.0000          0.0000          0.0000
+   3.2962       0.0000          0.0000          0.0000       0.0000          0.0000          0.0000
+   4.0027       0.0084          0.0084          0.0000       0.0000          0.0000          0.0000
+
+Cumulative profile:
+
+#  R [pc]         N     M [Msun]     L [Lsun]    N (2D)    M(2D) [Msun]    L(2D) [Lsun]
+   0.1000         0        0.000        0.000         0          0.0000          0.0000
+   0.1214         0        0.000        0.000         0          0.0000          0.0000
+   0.1475         0        0.000        0.000         1          1.0000          0.0000
+   0.1791         0        0.000        0.000         1          1.0000          0.0000
+   0.2174         0        0.000        0.000         1          1.0000          0.0000
+   0.2640         0        0.000        0.000         1          1.0000          0.0000
+   0.3206         0        0.000        0.000         1          1.0000          0.0000
+   0.3893         0        0.000        0.000         2          2.0000          0.0000
+   0.4728         1        1.000        0.000         2          2.0000          0.0000
+   0.5741         1        1.000        0.000         4          4.0000          0.0000
+   0.6972         2        2.000        0.000         5          5.0000          0.0000
+   0.8466         2        2.000        0.000         5          5.0000          0.0000
+   1.0280         5        5.000        0.000         6          6.0000          0.0000
+   1.2484         5        5.000        0.000         7          7.0000          0.0000
+   1.5159         6        6.000        0.000         7          7.0000          0.0000
+   1.8408         6        6.000        0.000         7          7.0000          0.0000
+   2.2354         8        8.000        0.000        10         10.0000          0.0000
+   2.7144         9        9.000        0.000        10         10.0000          0.0000
+   3.2962         9        9.000        0.000        10         10.0000          0.0000
+   4.0027        10       10.000        0.000        10         10.0000          0.0000
+
+Half-number radius = 1.0000 pc (0.6198 pc, 2D)
+Half-mass radius = 1.0000 pc (0.6198 pc, 2D)
+Half-light radius = 0.4187 pc (0.1421 pc, 2D)
+
+Estimating appropriate NNBMAX = 5 and RS0 = 1.508386 [pc]
+
+Actual half-mass radius of the cluster = (1.0000 / 0.6198) pc (3D / 2D)
+
+
+-----GENERATE BINARIES-----   
+
+No primordial binaries!
+
+
+-----SCALING-----      
+
+Re-calculate the total mass after binary generation for scaling: Mnew=10.000000 
+Scaling to astrophysical units. rscale=2.380929; vscale=0.137455
+
+New Time scaling: tscale=17.321510 
+
+-----OUTPUT-----      
+
+Data written to test-N10-8o5kpc-v220.PAR.NBODY and test-N10-8o5kpc-v220.PAR.NBODY
+
+
+-----FINISH-----  
+
+Elapsed time: 0.183011 sec
