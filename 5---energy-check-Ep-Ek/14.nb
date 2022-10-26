@@ -1,0 +1,217 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7373,        207]
+NotebookOptionsPosition[      6642,        180]
+NotebookOutlinePosition[      7016,        196]
+CellTagsIndexPosition[      6973,        193]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"M", "=", 
+   RowBox[{"1.9891", " ", 
+    SuperscriptBox["10", "30"]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"G", "=", 
+   RowBox[{"6.673", " ", 
+    SuperscriptBox["10", 
+     RowBox[{"-", "11"}]]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"mearth", "=", 
+   RowBox[{"5.9736", " ", 
+    SuperscriptBox["10", "24"]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"r", "=", 
+   RowBox[{"1.4959787066", " ", 
+    SuperscriptBox["10", "11"]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"v", "=", "29780."}], ";"}], "\n", 
+ RowBox[{"Print", "[", "\"\<Poteitial energy E_p=\>\"", "]"}], "\n", 
+ RowBox[{"Ep", "=", 
+  RowBox[{"-", 
+   FractionBox[
+    RowBox[{"G", " ", "M", " ", "mearth"}], "r"]}]}], "\n", 
+ RowBox[{"Print", "[", "\"\<Kinetic energy E_k=\>\"", "]"}], "\n", 
+ RowBox[{"Ek", "=", 
+  RowBox[{"0.5", " ", "mearth", " ", 
+   SuperscriptBox["v", "2"]}]}], "\n", 
+ RowBox[{"Print", "[", "\"\<U = 2 k\>\"", "]"}], "\n", 
+ FractionBox["Ep", "Ek"], "\n", 
+ RowBox[{"Print", "[", "\"\<Centrifugal force=\>\"", "]"}], "\n", 
+ FractionBox[
+  RowBox[{"mearth", " ", 
+   SuperscriptBox["v", "2"]}], "r"], "\n", 
+ RowBox[{"Print", "[", "\"\<Gravitational force=\>\"", "]"}], "\n", 
+ RowBox[{
+  FractionBox[
+   RowBox[{"G", " ", "M", " ", "mearth"}], 
+   SuperscriptBox["r", "2"]], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{"rx", "=", "2"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"ry", "=", "3"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"rz", "=", "1"}], ";"}], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{"r", "=", 
+   RowBox[{"\[Sqrt]", 
+    RowBox[{"(", 
+     RowBox[{
+      SuperscriptBox["rx", "2"], "+", 
+      SuperscriptBox["ry", "2"], "+", 
+      SuperscriptBox["rz", "2"]}], ")"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"vx", "*", "rx"}], "+", 
+    RowBox[{"vy", "*", "ry"}], "+", 
+    RowBox[{"vz", "*", "rz"}]}], "=", "0"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"v", "=", 
+    RowBox[{"\[Sqrt]", 
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["vx", "2"], "+", 
+       SuperscriptBox["vy", "2"], "+", 
+       SuperscriptBox["vz", "2"]}], ")"}]}]}], ";"}], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{"vrx", "=", 
+   RowBox[{
+    RowBox[{"vy", "*", "rz"}], "-", 
+    RowBox[{"vz", "*", "ry"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"vry", "=", 
+   RowBox[{
+    RowBox[{"vz", "*", "rx"}], "-", 
+    RowBox[{"vx", "*", "rz"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"vrz", "=", 
+    RowBox[{
+     RowBox[{"vx", "*", "ry"}], "-", 
+     RowBox[{"vy", "*", "rx"}]}]}], ";"}], "\n"}], "\n"}], "Code",
+ CellChangeTimes->{{3.8755982971523247`*^9, 3.875598361525007*^9}, {
+   3.8755984781506777`*^9, 3.875598506212282*^9}, {3.8755986087781487`*^9, 
+   3.875598637003763*^9}, {3.875598710620974*^9, 3.8755988134508553`*^9}, {
+   3.875598874074323*^9, 3.875598941890202*^9}, {3.875599526441636*^9, 
+   3.875599599844835*^9}, {3.8755996497566895`*^9, 3.87559965501199*^9}, 
+   3.875599693807209*^9, 3.8755999780444665`*^9, {3.8757732033521013`*^9, 
+   3.875773224726324*^9}, {3.87577330315481*^9, 3.875773330740388*^9}, {
+   3.875773360904113*^9, 3.8757735149789257`*^9}, {3.875773674290037*^9, 
+   3.875773675994135*^9}, {3.8757737138833017`*^9, 3.875773714322327*^9}, {
+   3.875773753025541*^9, 3.875773771681608*^9}, {3.8757738044174805`*^9, 
+   3.8757738215214586`*^9}, {3.8757738551053796`*^9, 
+   3.8757738774406567`*^9}, {3.87577410389561*^9, 3.8757741146802263`*^9}, {
+   3.8757741507442894`*^9, 3.8757744199416866`*^9}}],
+
+Cell[BoxData["\<\"Poteitial energy E_p=\"\>"], "Print",
+ CellChangeTimes->{3.8757742225463963`*^9, 3.875774266132889*^9, 
+  3.875774305504141*^9, 3.8757744226858435`*^9}],
+
+Cell[BoxData[
+ RowBox[{"-", "5.300153757046799`*^33"}]], "Output",
+ CellChangeTimes->{{3.8757741934097295`*^9, 3.875774222553396*^9}, 
+   3.8757742661348886`*^9, 3.8757743055061407`*^9, 3.8757744226878433`*^9}],
+
+Cell[BoxData["\<\"Kinetic energy E_k=\"\>"], "Print",
+ CellChangeTimes->{3.8757742225463963`*^9, 3.875774266132889*^9, 
+  3.875774305504141*^9, 3.8757744226888437`*^9}],
+
+Cell[BoxData["2.64883880112`*^33"], "Output",
+ CellChangeTimes->{{3.8757741934097295`*^9, 3.875774222553396*^9}, 
+   3.8757742661348886`*^9, 3.8757743055061407`*^9, 3.8757744226898437`*^9}],
+
+Cell[BoxData["\<\"U = 2 k\"\>"], "Print",
+ CellChangeTimes->{3.8757742225463963`*^9, 3.875774266132889*^9, 
+  3.875774305504141*^9, 3.8757744226908436`*^9}],
+
+Cell[BoxData[
+ RowBox[{"-", "2.000934807662041`"}]], "Output",
+ CellChangeTimes->{{3.8757741934097295`*^9, 3.875774222553396*^9}, 
+   3.8757742661348886`*^9, 3.8757743055061407`*^9, 3.8757744226928434`*^9}],
+
+Cell[BoxData["\<\"Centrifugal force=\"\>"], "Print",
+ CellChangeTimes->{3.8757742225463963`*^9, 3.875774266132889*^9, 
+  3.875774305504141*^9, 3.875774422693844*^9}],
+
+Cell[BoxData["3.5412787487332276`*^22"], "Output",
+ CellChangeTimes->{{3.8757741934097295`*^9, 3.875774222553396*^9}, 
+   3.8757742661348886`*^9, 3.8757743055061407`*^9, 3.8757744226948433`*^9}],
+
+Cell[BoxData["\<\"Gravitational force=\"\>"], "Print",
+ CellChangeTimes->{3.8757742225463963`*^9, 3.875774266132889*^9, 
+  3.875774305504141*^9, 3.8757744226948433`*^9}],
+
+Cell[BoxData["3.5429339559870973`*^22"], "Output",
+ CellChangeTimes->{{3.8757741934097295`*^9, 3.875774222553396*^9}, 
+   3.8757742661348886`*^9, 3.8757743055061407`*^9, 3.875774422696844*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Set", "::", "write"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Tag \[NoBreak]\\!\\(\\*RowBox[{\\\"Plus\\\"}]\\)\[NoBreak] \
+in \[NoBreak]\\!\\(\\*RowBox[{RowBox[{\\\"2\\\", \\\" \\\", \\\"vx\\\"}], \
+\\\"+\\\", RowBox[{\\\"3\\\", \\\" \\\", \\\"vy\\\"}], \\\"+\\\", \
+\\\"vz\\\"}]\\)\[NoBreak] is Protected. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/write\\\", ButtonNote -> \
+\\\"Set::write\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.8757741934797335`*^9, 3.8757742226113997`*^9}, 
+   3.8757742661958923`*^9, 3.8757743055661445`*^9, 3.8757744227498465`*^9}]
+}, Open  ]]
+},
+WindowSize->{1350, 686},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+Magnification:>2. Inherited,
+FrontEndVersion->"10.4 for Microsoft Windows (64-bit) (February 25, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 3471, 98, 1185, "Code"],
+Cell[4054, 122, 170, 2, 44, "Print"],
+Cell[4227, 126, 210, 3, 83, "Output"],
+Cell[4440, 131, 168, 2, 44, "Print"],
+Cell[4611, 135, 189, 2, 83, "Output"],
+Cell[4803, 139, 156, 2, 44, "Print"],
+Cell[4962, 143, 206, 3, 83, "Output"],
+Cell[5171, 148, 165, 2, 44, "Print"],
+Cell[5339, 152, 194, 2, 83, "Output"],
+Cell[5536, 156, 169, 2, 44, "Print"],
+Cell[5708, 160, 192, 2, 83, "Output"],
+Cell[5903, 164, 723, 13, 46, "Message"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
