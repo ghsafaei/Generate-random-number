@@ -26,14 +26,14 @@ call date_and_time(values=values)
 	!
 	! Initial seed from the system time and forced to be odd
 	!
-	!STIME = time(%REF(0))
-	CALL gmtime(TIME,T)
+	STIME = time(%REF(0))
+	CALL gmtime(STIME,T)
 	ISEED = T(6)+70*(T(5)+12*(T(4)+31*(T(3)+23*(T(2)+59*T(1)))))
 	IF (MOD(ISEED,2).EQ.0) ISEED = ISEED-1
 
 	idum=iseed
 	seed=iseed
-	print*,seed,t,time,seed2!,	random_number(seed2)
+	!print*,seed,t,time,seed2!,	random_number(seed2)
    !initial value for 9 parameters
 	m_p=-1
 	x0=-1
